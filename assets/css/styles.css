@@ -1,0 +1,211 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+footer{
+    border-top:solid grey;
+    text-align:center;
+}
+
+a {
+    color: #000;
+    border-bottom: solid white;
+}
+
+  /* header */
+  .head-logo{
+    text-align: center;
+    color: #A55122;
+    
+}
+
+.header .menu{
+    margin-left: auto;
+}
+
+.menu{
+    display: grid;
+    text-align: center;
+    background-color: rgb(218, 211, 211);
+    text-transform: uppercase;
+    
+}
+.menu a{
+    border-bottom: solid white;
+}
+
+/* article texte + image */
+
+.article h2{
+    text-align: center;
+    
+}
+
+.article img{
+    width: 20rem;
+    justify-content:center;
+    padding-left: 2rem;
+}
+
+
+.article p{
+    width: 20rem;
+    font-size: 0.8rem;
+    text-align: justify;
+    padding-left: 2rem;
+}
+
+.article{
+    border-bottom:solid grey 0.1rem;
+}
+
+/* deuxieme partie article */
+
+.second-article h3{
+    border-bottom:solid grey 0.1rem;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.header h1::before {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.header ul {
+    margin-left: 40%;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header li a {
+    display: block;
+    padding: 1.25rem 1.25rem;
+    text-decoration: none;
+    background-color: rgb(204, 200, 200);
+}
+
+.header li a:hover{
+    background-color:#d56d30;
+    transition: all 2s ease-out;
+}
+
+  /* menu */
+
+.header .menu {
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+  /* menu icone */
+
+.header .menu-icone {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.75rem 1.25rem;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icone .nav-icone {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 1.375rem;
+}
+
+.header .menu-icone .nav-icone:before,
+.header .menu-icone .nav-icone:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icone .nav-icone:before {
+    top: 5px;
+}
+
+.header .menu-icone .nav-icone:after {
+    top: -5px;
+}
+
+  /* menu bouton */
+
+.header .menu-bouton {
+    display: none;
+}
+
+.header .menu-bouton:checked ~ .menu {
+    max-height: 15rem; /* définit la taille du conteneur des liens*/
+}
+
+.header .menu-bouton:checked ~ .menu-icone .nav-icone {
+    background: transparent;/* Fait disparaître le span initial*/
+}
+
+.header .menu-bouton:checked ~ .menu-icone .nav-icone:before {
+    transform: rotate(-45deg); /*fait pivoter le span before de 45degrès ver la gauche*/
+}
+
+.header .menu-bouton:checked ~ .menu-icone .nav-icone:after {
+    transform: rotate(45deg);/*fait pivoter le span before de 45degrès ver la droite*/
+}
+
+.header .menu-bouton:checked ~ .menu-icone .nav-icone:before,
+.header .menu-bouton:checked ~ .menu-icone .nav-icone:after {
+    top: 0;
+}
+
+/* 48rem = 768px qui est la résolution min des écran pc*/
+
+@media (min-width: 48rem) {
+
+
+
+
+
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 1.25rem 1.875rem;
+        border-right: 1px solid #f4f4f4;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icone {
+        display: none;
+    }
+}
