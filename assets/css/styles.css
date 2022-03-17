@@ -176,11 +176,6 @@ a {
 
 @media (min-width: 48rem) {
 
-
-
-
-
-
     .header {
         display: flex;
         justify-content: space-between;
@@ -208,4 +203,110 @@ a {
     .header .menu-icone {
         display: none;
     }
+}
+
+
+
+@media (min-width:724px) {
+
+
+   body{
+       width:52rem;
+   }
+
+   .menu{
+       background-color: #fff;
+   }
+
+   .header{
+    display: grid;
+    width: 52rem;
+    justify-content: center;
+   }
+
+   .header .menu{
+    width: 52rem;
+   }
+
+   .article{
+    text-align: -webkit-center;
+    border-bottom: none;
+   }
+
+   .second-article{
+    width: 55rem;
+    display: flex;
+   }
+   .second-article .top{
+    width: 46rem;
+   }
+
+   footer {
+       width: 55rem;
+       border-top: solid grey;
+   }
+
+
+}
+
+
+@media (min-width: 886px) {
+
+
+
+
+    body{
+        width: 2rem;
+    }
+    .header{
+        display: inline-flex;
+        width: 82rem;
+
+    }
+
+    .head-logo{
+        margin-left: 14rem;
+    }
+
+    main{
+        width: 82rem;
+        display: flex;
+    }
+
+    .artcile{
+        width: 63rem;
+        border-bottom: none;
+    }
+
+    .article img{
+        width: 41rem;
+    }
+    .article p{
+        width: 41rem;
+        font-size: 1.2rem;
+    }
+
+    .second-article{
+        margin-left: auto;
+    }
+    .second-article h3{
+        width: 17rem;
+    }
+    .gallery-img{
+        padding-top: 18rem;
+        width: 19rem;
+        margin-left: -44rem;
+    }
+
+    .gallery-img .image{
+        width: 1rem;
+    }
+
+
+    footer p{
+        width: 82rem;
+        border-top: solid grey 1px;
+    }
+
+
 }
