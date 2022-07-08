@@ -25,6 +25,11 @@ a {
     
 }
 
+h1{
+    box-shadow: 3px 3px #A55122, -1em 0 .4em olive;
+    text-align: justify;
+}
+
 .header .menu{
     margin-left: auto;
 }
