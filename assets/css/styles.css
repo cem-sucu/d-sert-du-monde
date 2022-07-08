@@ -96,9 +96,11 @@ h1{
 
 .header li a {
     display: block;
-    padding: 1.25rem 1.25rem;
+    padding: 1.1rem 1.1rem;
     text-decoration: none;
-    background-color: rgb(204, 200, 200);
+    color: #fffefe;
+    font-weight: bold;
+    background-color: #d56d30;
 }
 
 .header li a:hover{
